@@ -1,21 +1,13 @@
 # Create an application to store and retrieve recipes.
 # Each recipe can include a name, list of ingredients and quantities. [cooking instructions is too much text]
 # 
-# input console should work like that:
-# Insert recipe name (checks if it is there)
-# Insert Ingredient#1 
-# Insert Quantity for Ingredient#1
-# Then ask: another ingredient or done?
-
 # To add:
 # Upscale recipes: standard is 4 portions, but you can also make 2 or 6 and it adjusts accordingly
 # Type in ingredients  you have and with a set comparison it checks which recipes e.g. use carrots AND potatoes
-# 
-# Practice Skills:
-# Use a dictionary to map recipe names to their details.
-# Ingredients can be stored in tuples (ingredient, quantity) within a list.
-# Practice adding new recipes, updating existing ones, and retrieving a recipe by name.
+# checking if recipe already exists with .setdefault()
 # Use slicing and string methods for displaying and formatting recipes.
+
+
 from prettytable import PrettyTable
 cookbook = {}    
 cookbook["vegetable soup"] = {"carrots":5, "potatoes":3, "leek":1}
